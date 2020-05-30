@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.NoticiasActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/btnnoticias"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Noticias"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btnsintomas"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sintomas"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btncasos"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Meu \nEstado"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btnsummary"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:textSize="15sp"
+            android:text="Paises"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/head"
+        android:background="@color/white"/>
+
+<!--    <ListView-->
+<!--        android:layout_below="@id/head"-->
+<!--        android:id="@+id/listanoticias"-->
+<!--        android:layout_marginTop="1px"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listarecynoticias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:layout_marginTop="1px"/>
+
+</RelativeLayout>

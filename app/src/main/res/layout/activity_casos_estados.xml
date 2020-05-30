@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.CasosEstadosActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/btnnoticias"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Noticias"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btnsintomas"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sintomas"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btncasos"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Meu \nEstado"
+            android:textSize="15sp"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btnsummary"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/black"
+            android:textSize="15sp"
+            android:text="Paises"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/head"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/nestado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="Estado: "
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nestado"
+        android:layout_toRightOf="@id/nestado"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/nuf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nestado"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="5dp"
+        android:text="UF:"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/uf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nuf"
+        android:layout_toRightOf="@id/nuf"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/ncasos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nestado"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:text="Casos: "
+        android:textSize="15sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/casos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/ncasos"
+        android:layout_toRightOf="@id/ncasos"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/ndeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/ncasos"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="5dp"
+        android:text="Mortes: "
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/ndeaths"
+        android:layout_toRightOf="@id/ndeaths"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/nsuspects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ncasos"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="Suspeitos: "
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/suspects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nsuspects"
+        android:layout_toRightOf="@id/nsuspects"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/nrefuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nsuspects"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="5dp"
+        android:text="Descartados: "
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/refuses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nrefuses"
+        android:layout_toRightOf="@id/nrefuses"
+        android:textColor="@color/gray"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">covidsintomas</string>
+
+    <string name="title">Total de casos Confirmados</string>
+    <string name="generalView">Visão Geral</string>
+    <string name="totalActive">Casos ativos:</string>
+    <string name="total_recovered">Casos recuperados:</string>
+    <string name="total_deaths">Casos fatais</string>
+    <string name="countries">Países</string>
+
+</resources>
