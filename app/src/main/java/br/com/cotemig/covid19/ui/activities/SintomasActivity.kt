@@ -60,36 +60,6 @@ class SintomasActivity : AppCompatActivity() {
                     if (it.code() == 200) {
                         listageral.adapter = SintomasAdapter(this@SintomasActivity,it.body().sintomascomuns,it.body().sintomasraros,it.body().sintomasgraves,it.body().recomendacoes,it.body().temposintomas)
 
-
-
-
-
-//                        Toast.makeText(this@SintomasActivity, "Ok", Toast.LENGTH_LONG).show()
-//                        listasintomas.adapter = SintomasAdapter(this@MainActivity,it.body().sintomascomuns,it.body().sintomasraros,it.body().sintomasgraves)
-
-//                        listasintomas.adapter = SintomasAdapter(this@MainActivity,it.body()[0].sintomascomuns)
-//                        listasinatomasraros.adapter = SintomasAdapter(this@MainActivity,it.body()[0].sintomasraros)
-//                        listasinatomasgraves.adapter = SintomasAdapter(this@MainActivity,it.body()[0].sintomasgraves)
-
-
-//                        listasintomas.adapter = SintomasRecycleAdapter (this@MainActivity,it.body().sintomascomuns)
-//                        listasintomas.layoutManager = LinearLayoutManager(this@MainActivity,LinearLayoutManager.VERTICAL,false)
-//                        val snapHelper = PagerSnapHelper()
-//                        snapHelper.attachToRecyclerView(listasintomas)
-//
-//
-//                        listasinatomasraros.adapter = SintomasRecycleAdapter(this@MainActivity,it.body().sintomasraros)
-//                        listasinatomasraros.layoutManager = LinearLayoutManager(this@MainActivity,LinearLayoutManager.VERTICAL,false)
-//
-//                        listasinatomasgraves.adapter = SintomasRecycleAdapter(this@MainActivity,it.body().sintomasgraves)
-//                        listasinatomasgraves.layoutManager = LinearLayoutManager(this@MainActivity,LinearLayoutManager.VERTICAL,false)
-
-//                        listasintomas.adapter = SintomasAdapter(this@MainActivity,it.body().sintomascomuns)
-//                        listasinatomasraros.adapter = SintomasAdapter(this@MainActivity,it.body().sintomasraros)
-//                        listasinatomasraros.adapter = SintomasAdapter(this@MainActivity,it.body().sintomasraros)
-//                        listasinatomasgraves.adapter = SintomasAdapter(this@MainActivity,it.body().sintomasgraves)
-
-
                     }
                 }
 
