@@ -3,127 +3,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.SummaryActivity">
+    tools:context=".ui.activities.SummaryActivity"
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/head"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/black">
+        android:background="@color/white">
 
         <Button
-            android:id="@+id/btnnoticias"
             android:layout_weight="1"
+            android:id="@+id/btnnoticias"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Noticias"
-            android:textSize="15sp"
-            android:backgroundTint="@color/black"/>
+            android:text="Notícias"
+            android:textSize="8.5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
         <Button
+            android:layout_marginRight="10dp"
             android:id="@+id/btnsintomas"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Sintomas"
-            android:textSize="15sp"
-            android:backgroundTint="@color/black"/>
+            android:textSize="8.5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
         <Button
+            android:layout_marginRight="10dp"
             android:id="@+id/btncasos"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Meu \nEstado"
-            android:textSize="15sp"
-            android:backgroundTint="@color/black"/>
+            android:text="Meu Estado"
+            android:textSize="7dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
         <Button
             android:id="@+id/btnsummary"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/black"
-            android:textSize="15sp"
-            android:text="Paises"/>
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Países"
+            android:textSize="8.5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/head"
+        android:id="@+id/imagemundo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/mundo">
+
+    </ImageView>
+
+
     <TextView
+        android:layout_centerHorizontal="true"
         android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/head"
+        android:layout_below="@+id/imagemundo"
         android:fontFamily="sans-serif-black"
         android:text="@string/title"
-        android:textColor="@color/blackLight"
+        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <LinearLayout
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="5dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/generalView"
-            android:textColor="@color/blackLight"
-            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/total_confirmed"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
             android:fontFamily="sans-serif-black"
-            android:gravity="left"
+            android:layout_gravity="center_horizontal"
             android:textColor="@color/redWarning"
-            android:textSize="35sp"
+            android:textSize="25sp"
 
             />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
-            android:layout_marginTop="5dp">
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/label_total_active"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/robotomedium"
                 android:text="@string/totalActive"
-                android:textColor="@color/blackLight" />
+                android:textColor="@color/blacktitle" />
 
             <TextView
                 android:id="@+id/total_actual"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="0.55"
                 android:gravity="right"
-                android:textColor="@color/grayLight" />
+                android:textColor="@color/blacktitle" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:id="@+id/label_total_recovered"
@@ -131,9 +150,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/robotomedium"
                 android:text="@string/total_recovered"
-                android:textColor="@color/blackLight" />
+                android:textColor="@color/blacktitle" />
 
             <TextView
                 android:id="@+id/total_recovered"
@@ -142,34 +161,43 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1.1"
                 android:gravity="right"
-                android:textColor="@color/grayLight" />
+                android:textColor="@color/blacktitle" />
+
+            <TextView
+                android:id="@+id/mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blacktitle">
+            </TextView>
 
             <TextView
                 android:id="@+id/new_recovered"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:layout_weight="1.1"
                 android:gravity="right"
-                android:textColor="@color/grayLight" />
+                android:textColor="@color/blacktitle" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
-            android:layout_marginVertical="10dp">
+            android:layout_marginVertical="5dp">
 
             <TextView
                 android:id="@+id/label_total_deaths"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/robotomedium"
                 android:text="@string/total_deaths"
-                android:textColor="@color/blackLight" />
+                android:textColor="@color/blacktitle" />
 
             <TextView
                 android:id="@+id/total_deaths"
@@ -178,16 +206,24 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1.1"
                 android:gravity="right"
-                android:textColor="@color/grayLight" />
+                android:textColor="@color/blacktitle" />
+
+            <TextView
+                android:id="@+id/mais2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blacktitle">
+            </TextView>
 
             <TextView
                 android:id="@+id/new_deaths"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
                 android:layout_weight="1.1"
                 android:gravity="right"
-                android:textColor="@color/grayLight" />
+                android:textColor="@color/blacktitle" />
 
         </LinearLayout>
 
@@ -198,7 +234,7 @@
             android:layout_marginVertical="8dp"
             android:fontFamily="sans-serif-black"
             android:text="@string/countries"
-            android:textColor="@color/blackLight"
+            android:textColor="@color/black"
             android:textSize="18sp" />
 
         <ListView

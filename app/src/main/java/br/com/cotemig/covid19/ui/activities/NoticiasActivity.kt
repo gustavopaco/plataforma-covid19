@@ -9,7 +9,12 @@ import br.com.cotemig.covid19.R
 import br.com.cotemig.covid19.models.NoticiasResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.adapters.NoticiasRecycleAdapter
+import kotlinx.android.synthetic.main.activity_casos_estados.*
 import kotlinx.android.synthetic.main.activity_noticias.*
+import kotlinx.android.synthetic.main.activity_noticias.btncasos
+import kotlinx.android.synthetic.main.activity_noticias.btnnoticias
+import kotlinx.android.synthetic.main.activity_noticias.btnsintomas
+import kotlinx.android.synthetic.main.activity_noticias.btnsummary
 import retrofit2.Call
 import retrofit2.Response
 
@@ -18,10 +23,9 @@ class NoticiasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_noticias)
 
-
-
         if(this == this@NoticiasActivity){
-            btnnoticias.setBackgroundColor(getColor(R.color.red))
+            btnnoticias.setBackgroundColor(getColor(R.color.blueback))
+            btnnoticias.setTextColor(getColor(R.color.blueselect))
             btnnoticias.isClickable = false
         }
 

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/black">
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/titulonoticias"
@@ -12,7 +12,7 @@
         android:gravity="center"
         android:text="Title"
         android:textSize="25sp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/black"/>
 
     <ImageView
         android:id="@+id/imagenoticas"
@@ -30,7 +30,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="date"
-        android:textColor="@color/gray"/>
+        android:textColor="@color/blacktitle"/>
 
     <TextView
         android:id="@+id/textonoticias"
@@ -41,13 +41,13 @@
         android:textSize="15dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="10dp"
-        android:textColor="@color/gray"/>
+        android:textColor="@color/blacktitle"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_below="@id/textonoticias"
-        android:background="@color/white"/>
+        android:background="@color/blacktitle"/>
 
 
 </RelativeLayout>

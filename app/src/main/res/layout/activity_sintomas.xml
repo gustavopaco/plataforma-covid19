@@ -6,50 +6,63 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.activities.SintomasActivity"
-    android:background="@color/black">
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/head"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/black">
+        android:background="@color/white">
 
         <Button
-            android:id="@+id/btnnoticias"
             android:layout_weight="1"
+            android:id="@+id/btnnoticias"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Noticias"
-            android:textSize="15sp"
-            android:backgroundTint="@color/black"/>
+            android:text="Notícias"
+            android:textSize="8.5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
         <Button
+            android:layout_marginRight="10dp"
             android:id="@+id/btnsintomas"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Sintomas"
-            android:textSize="15sp"
-            android:backgroundTint="@color/black"/>
+            android:textSize="8.5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
         <Button
+            android:layout_marginRight="10dp"
             android:id="@+id/btncasos"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Meu \nEstado"
-            android:textSize="15sp"
-            android:backgroundTint="@color/black"/>
+            android:text="Meu Estado"
+            android:textSize="7dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
         <Button
             android:id="@+id/btnsummary"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/black"
-            android:textSize="15sp"
-            android:text="Paises"/>
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Países"
+            android:textSize="8.5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/robotomedium"/>
 
     </LinearLayout>
 
@@ -62,6 +75,6 @@
     <ListView
         android:id="@+id/listageral"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

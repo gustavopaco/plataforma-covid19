@@ -12,4 +12,9 @@
     <color name="redWarning">#DE3700</color>
     <color name="blackLight">#333333</color>
     <color name="grayLight">#767676</color>
+    <color name="blueselect">#4485FD</color>
+    <color name="blueback">#D2E6FF</color>
+    <color name="bluebackground">#9FCAFF</color>
+    <color name="grey">#7C818A</color>
+    <color name="blacktitle">#3b4161</color>
 </resources>

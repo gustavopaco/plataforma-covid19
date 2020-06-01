@@ -8,7 +8,12 @@ import br.com.cotemig.covid19.R
 import br.com.cotemig.covid19.models.SintomasResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.adapters.SintomasAdapter
+import kotlinx.android.synthetic.main.activity_casos_estados.*
 import kotlinx.android.synthetic.main.activity_sintomas.*
+import kotlinx.android.synthetic.main.activity_sintomas.btncasos
+import kotlinx.android.synthetic.main.activity_sintomas.btnnoticias
+import kotlinx.android.synthetic.main.activity_sintomas.btnsintomas
+import kotlinx.android.synthetic.main.activity_sintomas.btnsummary
 import retrofit2.Call
 import retrofit2.Response
 
@@ -18,7 +23,8 @@ class SintomasActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sintomas)
 
         if(this == this@SintomasActivity){
-            btnsintomas.setBackgroundColor(getColor(R.color.red))
+            btnsintomas.setBackgroundColor(getColor(R.color.blueback))
+            btnsintomas.setTextColor(getColor(R.color.blueselect))
             btnsintomas.isClickable = false
         }
 

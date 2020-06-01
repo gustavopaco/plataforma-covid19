@@ -8,7 +8,12 @@ import br.com.cotemig.covid19.R
 import br.com.cotemig.covid19.models.Summary
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.adapters.SummaryAdapter
+import kotlinx.android.synthetic.main.activity_casos_estados.*
 import kotlinx.android.synthetic.main.activity_summary.*
+import kotlinx.android.synthetic.main.activity_summary.btncasos
+import kotlinx.android.synthetic.main.activity_summary.btnnoticias
+import kotlinx.android.synthetic.main.activity_summary.btnsintomas
+import kotlinx.android.synthetic.main.activity_summary.btnsummary
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,8 +24,9 @@ class SummaryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_summary)
 
         if(this == this@SummaryActivity){
+            btnsummary.setBackgroundColor(getColor(R.color.blueback))
+            btnsummary.setTextColor(getColor(R.color.blueselect))
             btnsummary.isClickable = false
-            btnsummary.setBackgroundColor(getColor(R.color.red))
         }
 
         btnnoticias.setOnClickListener {

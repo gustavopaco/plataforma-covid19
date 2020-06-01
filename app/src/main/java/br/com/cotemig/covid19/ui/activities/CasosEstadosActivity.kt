@@ -21,7 +21,8 @@ class CasosEstadosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_casos_estados)
 
         if(this == this@CasosEstadosActivity){
-            btncasos.setBackgroundColor(getColor(R.color.red))
+            btncasos.setBackgroundColor(getColor(R.color.blueback))
+            btncasos.setTextColor(getColor(R.color.blueselect))
             btncasos.isClickable = false
         }
 
