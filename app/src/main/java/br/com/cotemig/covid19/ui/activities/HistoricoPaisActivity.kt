@@ -10,6 +10,7 @@ import br.com.cotemig.covid19.models.CountryHistoricoResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.adapters.HistoricoPaisAdapter
 import kotlinx.android.synthetic.main.activity_historicopais.*
+import kotlinx.android.synthetic.main.item_historicopais.*
 import retrofit2.Call
 import retrofit2.Response
 
@@ -58,9 +59,11 @@ class HistoricoPaisActivity : AppCompatActivity() {
                 response: Response<List<CountryHistoricoResponse>>?
             ) {
                 response?.let {
-                    if(it.code() == 200){
-                        listahistorico.adapter = HistoricoPaisAdapter(this@HistoricoPaisActivity,it.body())
+                    if (it.code() == 200) {
+                        historicopais.text = it.body().get(0).Country
+                        listahistorico.adapter = HistoricoPaisAdapter(this@HistoricoPaisActivity, it.body())
                         listahistorico.layoutManager = LinearLayoutManager(this@HistoricoPaisActivity,LinearLayoutManager.VERTICAL,false)
+
                     }
                 }
 

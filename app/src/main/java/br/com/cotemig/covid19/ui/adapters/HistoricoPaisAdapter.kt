@@ -29,7 +29,7 @@ class HistoricoPaisAdapter(var context: Context, var list: List<CountryHistorico
 
     class ViewHistoricoPais(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(context: Context, item: CountryHistoricoResponse) {
-            var Country = itemView.findViewById<TextView>(R.id.Country)
+//            var Country = itemView.findViewById<TextView>(R.id.Country)
             var data = itemView.findViewById<TextView>(R.id.data)
             var Confirmed = itemView.findViewById<TextView>(R.id.Confirmed)
             var Deaths = itemView.findViewById<TextView>(R.id.Deaths)
@@ -37,10 +37,10 @@ class HistoricoPaisAdapter(var context: Context, var list: List<CountryHistorico
             var Recovered = itemView.findViewById<TextView>(R.id.Recovered)
 
             val parser = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
-            val formatter = SimpleDateFormat("dd.MM.yyyy")
+            val formatter = SimpleDateFormat("dd/MM/yyyy")
             val output: String = formatter.format(parser.parse(item.Date.toString()))
 
-            Country.text = item.Country
+//            Country.text = item.Country
             data.text = output
             Confirmed.text = item.Confirmed.toString()
             Deaths.text = item.Deaths.toString()
