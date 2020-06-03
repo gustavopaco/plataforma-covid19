@@ -72,4 +72,8 @@ class RetrofitInitializer {
         return retrofitSummary.create(SummaryService::class.java)
     }
 
+    fun serviceHistoricoPais() : HistoricoPaisService {
+        return retrofitSummary.create(HistoricoPaisService::class.java)
+    }
+
 }

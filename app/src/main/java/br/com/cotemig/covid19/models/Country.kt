@@ -9,5 +9,6 @@ data class Country(
     var TotalDeaths: Int = 0,
     var NewRecovered: Int = 0,
     var TotalRecovered: Int = 0,
+    var Slug : String = "",
     var Date: String = ""
 )

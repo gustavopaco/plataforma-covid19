@@ -12,19 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ui.activities.HistoricoPaisActivity">
+
+        </activity>
         <activity android:name=".ui.activities.SplashActivty">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".ui.activities.SummaryActivity" />
         <activity android:name=".ui.activities.CasosEstadosActivity" />
-        <activity android:name=".ui.activities.NoticiasActivity">
-
-        </activity>
+        <activity android:name=".ui.activities.NoticiasActivity" />
         <activity android:name=".ui.activities.SintomasActivity" />
     </application>
 
