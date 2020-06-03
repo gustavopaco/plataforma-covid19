@@ -65,7 +65,7 @@ class HistoricoPaisActivity : AppCompatActivity() {
                 }
 
 
-                Toast.makeText(this@HistoricoPaisActivity, "Ok", Toast.LENGTH_LONG).show()
+//                Toast.makeText(this@HistoricoPaisActivity, "Ok", Toast.LENGTH_LONG).show()
             }
 
             override fun onFailure(call: Call<List<CountryHistoricoResponse>>?, t: Throwable?) {
