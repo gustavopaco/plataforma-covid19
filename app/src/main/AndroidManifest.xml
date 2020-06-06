@@ -12,9 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.activities.HistoricoPaisActivity">
-
-        </activity>
+        <activity android:name=".ui.activities.HistoricoPaisActivity"></activity>
+        <activity android:name=".ui.activities.HomeActivity" />
         <activity android:name=".ui.activities.SplashActivty">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

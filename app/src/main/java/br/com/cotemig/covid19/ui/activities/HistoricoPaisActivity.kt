@@ -9,7 +9,7 @@ import br.com.cotemig.covid19.R
 import br.com.cotemig.covid19.models.CountryHistoricoResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.adapters.HistoricoPaisAdapter
-import kotlinx.android.synthetic.main.activity_historicopais.*
+import kotlinx.android.synthetic.main.activity_historico_pais.*
 import kotlinx.android.synthetic.main.item_historicopais.*
 import retrofit2.Call
 import retrofit2.Response
@@ -17,34 +17,14 @@ import retrofit2.Response
 class HistoricoPaisActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_historicopais)
-
-        btnnoticias.setOnClickListener {
-            var intent = Intent(this, NoticiasActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        btnsintomas.setOnClickListener {
-            var intent = Intent(this, SintomasActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        btncasos.setOnClickListener {
-            var intent = Intent(this, CasosEstadosActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        btnsummary.setOnClickListener {
-            var intent = Intent(this, SummaryActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
+        setContentView(R.layout.activity_historico_pais)
 
         getHistoricoPais()
+
+
+        btnvoltar.setOnClickListener {
+            finish()
+        }
 
     }
 

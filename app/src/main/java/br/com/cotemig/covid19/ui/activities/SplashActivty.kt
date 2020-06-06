@@ -13,14 +13,14 @@ class SplashActivty : AppCompatActivity() {
 
         Handler().postDelayed({
 
-            goLoginActivity()
+            goHomeActivity()
 
         }, 1000)
 
     }
 
-    fun goLoginActivity() {
-        var intent = Intent(this, NoticiasActivity::class.java)
+    fun goHomeActivity() {
+        var intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
         finish()
     }
