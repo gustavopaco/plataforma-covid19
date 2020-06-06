@@ -43,6 +43,7 @@ class SintomasFragment : Fragment() {
                 response?.let {
                     if (it.code() == 200) {
                         listageral.adapter = SintomasAdapter(activity,it.body().sintomascomuns,it.body().sintomasraros,it.body().sintomasgraves,it.body().recomendacoes,it.body().temposintomas)
+                        activity.telaVisivel()
 
                     }
                 }

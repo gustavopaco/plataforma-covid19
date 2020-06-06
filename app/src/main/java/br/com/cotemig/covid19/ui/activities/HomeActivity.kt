@@ -1,6 +1,7 @@
 package br.com.cotemig.covid19.ui.activities
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import br.com.cotemig.covid19.ui.fragment.NoticiasFragment
 import br.com.cotemig.covid19.ui.fragment.SintomasFragment
 import br.com.cotemig.covid19.ui.fragment.SummaryFragment
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.fragment_location.*
 
 class HomeActivity : AppCompatActivity() {
 
@@ -47,6 +49,7 @@ var numeromenu = 0
     fun setFragment(f: Fragment, name: String) {
         val ft = supportFragmentManager.beginTransaction()
         ft.replace(R.id.contenthome, f, name)
+//        ft.addToBackStack(name)
         ft.commit()
 
     }
@@ -56,7 +59,6 @@ var numeromenu = 0
 
         btnnoticias.setBackgroundColor(getColor(R.color.white))
         btnnoticias.setTextColor(getColor(R.color.grey))
-
 
         btnsintomas.setBackgroundColor(getColor(R.color.white))
         btnsintomas.setTextColor(getColor(R.color.grey))
@@ -77,24 +79,43 @@ var numeromenu = 0
             btnnoticias.setBackgroundColor(getColor(R.color.blueback))
             btnnoticias.setTextColor(getColor(R.color.blueselect))
             setFragment(NoticiasFragment(),"noticias")
-            btnnoticias.isClickable = false
+            desligarBotoes()
+            loading.visibility = View.VISIBLE
         }else if(index == 1){
             btnsintomas.setBackgroundColor(getColor(R.color.blueback))
             btnsintomas.setTextColor(getColor(R.color.blueselect))
             setFragment(SintomasFragment(),"sintomas")
-            btnsintomas.isClickable = false
+            desligarBotoes()
+            loading.visibility = View.VISIBLE
         }else if(index == 2){
             btnlocation.setBackgroundColor(getColor(R.color.blueback))
             btnlocation.setTextColor(getColor(R.color.blueselect))
             setFragment(LocationFragment(),"location")
-            btnlocation.isClickable = false
+            desligarBotoes()
+            loading.visibility = View.VISIBLE
         }else if(index == 3){
             btnsummary.setBackgroundColor(getColor(R.color.blueback))
             btnsummary.setTextColor(getColor(R.color.blueselect))
             setFragment(SummaryFragment(),"summary")
-            btnsummary.isClickable = false
+            desligarBotoes()
+            loading.visibility = View.VISIBLE
         }
 
+    }
+
+    fun telaVisivel(){
+        loading.visibility = View.GONE
+        btnnoticias.isClickable = true
+        btnsintomas.isClickable = true
+        btnlocation.isClickable = true
+        btnsummary.isClickable = true
+    }
+
+    fun desligarBotoes(){
+        btnnoticias.isClickable = false
+        btnsintomas.isClickable = false
+        btnsummary.isClickable = false
+        btnlocation.isClickable = false
     }
 
 }

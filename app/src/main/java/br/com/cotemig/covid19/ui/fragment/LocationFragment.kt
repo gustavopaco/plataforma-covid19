@@ -54,7 +54,7 @@ class LocationFragment : Fragment() {
     }
 
     fun getCasosEstados(siglaEstado : String){
-
+        var activity = context as HomeActivity
         var s = RetrofitInitializer().serviceCasosEstados()
         var call = s.getCasosEstados()
 
@@ -74,6 +74,7 @@ class LocationFragment : Fragment() {
                                 deaths.text = i.deaths.toString()
                                 suspects.text = i.suspects.toString()
                                 refuses.text = i.refuses.toString()
+                                activity.telaVisivel()
                             }
                         }
 //                        Toast.makeText(this@CasosEstadosActivity,"Ok", Toast.LENGTH_LONG).show()

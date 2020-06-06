@@ -12,6 +12,7 @@ import br.com.cotemig.covid19.models.NoticiasResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.activities.HomeActivity
 import br.com.cotemig.covid19.ui.adapters.NoticiasRecycleAdapter
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_noticias.*
 import retrofit2.Call
 import retrofit2.Response
@@ -48,6 +49,7 @@ class NoticiasFragment : Fragment() {
 
                         listarecynoticias.adapter = NoticiasRecycleAdapter(activity,it.body())
                         listarecynoticias.layoutManager = LinearLayoutManager(activity,LinearLayoutManager.VERTICAL,false)
+                        activity.telaVisivel()
 
 //                        Toast.makeText(this@NoticiasActivity,"Ok",Toast.LENGTH_LONG).show()
                     }

@@ -35,6 +35,7 @@ class SummaryFragment : Fragment() {
     }
 
     private fun getSummary() {
+        var activity = context as HomeActivity
         var s = RetrofitInitializer().serviceSummary()
         var call = s.getSummary()
 
@@ -52,6 +53,7 @@ class SummaryFragment : Fragment() {
                         listacountries.adapter =SummaryRecycleAdapter(context as HomeActivity, it.body().Countries)
                         listacountries.layoutManager = LinearLayoutManager(context as HomeActivity,LinearLayoutManager.VERTICAL,false)
                         getRecycleItemClickListener(it.body())
+                        activity.telaVisivel()
                     }
                 }
             }
