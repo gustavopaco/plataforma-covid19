@@ -15,6 +15,8 @@ import br.com.cotemig.covid19.ui.activities.HistoricoPaisActivity
 import br.com.cotemig.covid19.ui.activities.HomeActivity
 import br.com.cotemig.covid19.ui.adapters.SummaryRecycleAdapter
 import br.com.cotemig.covid19.util.RecyclerItemClickListener
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.Theme
 import kotlinx.android.synthetic.main.fragment_summary.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -54,19 +56,30 @@ class SummaryFragment : Fragment() {
                         listacountries.layoutManager = LinearLayoutManager(context as HomeActivity,LinearLayoutManager.VERTICAL,false)
                         getRecycleItemClickListener(it.body())
                         activity.telaVisivel()
+                    }else {
+                        activity.telaVisivel()
+                        MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                            .title(R.string.erro)
+                            .content(R.string.serviceerror)
+                            .positiveText(R.string.ok)
+                            .show()
                     }
                 }
             }
 
             override fun onFailure(call: Call<Summary>?, t: Throwable?) {
-                Toast.makeText(context as HomeActivity, "ERROR!!", Toast.LENGTH_LONG).show()
+                activity.telaVisivel()
+                MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                    .title(R.string.erro)
+                    .content(R.string.serviceerror)
+                    .positiveText(R.string.ok)
+                    .show()
             }
 
         })
     }
-
+    // Metodo de Item Click no RecyclerView e Chamar tela de do Historico do Pais
     fun getRecycleItemClickListener(pais : Summary) {
-//        val recyclerView = findViewById<RecyclerView>(R.id.listacountries)
         listacountries.addOnItemTouchListener(RecyclerItemClickListener(context as HomeActivity,listacountries,object : RecyclerItemClickListener.OnItemClickListener {
                     override
                     fun onItemClick(view: View?, position: Int) {
@@ -74,7 +87,6 @@ class SummaryFragment : Fragment() {
                         intent.putExtra("pais", pais.Countries[position].Slug)
                         intent.putExtra("nomepais", pais.Countries[position].Country)
                         startActivity(intent)
-//                        Toast.makeText(this@SummaryActivity,"Cliquei no pais\n".plus(pais.Countries[position].Slug),Toast.LENGTH_LONG).show()
                     }
                     override
                     fun onLongItemClick(view: View?, position: Int) {

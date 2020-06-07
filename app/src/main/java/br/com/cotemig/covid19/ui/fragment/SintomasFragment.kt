@@ -11,6 +11,8 @@ import br.com.cotemig.covid19.models.SintomasResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.activities.HomeActivity
 import br.com.cotemig.covid19.ui.adapters.SintomasAdapter
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.Theme
 import kotlinx.android.synthetic.main.fragment_sintomas.*
 import retrofit2.Call
 import retrofit2.Response
@@ -44,13 +46,24 @@ class SintomasFragment : Fragment() {
                     if (it.code() == 200) {
                         listageral.adapter = SintomasAdapter(activity,it.body().sintomascomuns,it.body().sintomasraros,it.body().sintomasgraves,it.body().recomendacoes,it.body().temposintomas)
                         activity.telaVisivel()
-
+                    }else{
+                        activity.telaVisivel()
+                        MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                            .title(R.string.erro)
+                            .content(R.string.serviceerror)
+                            .positiveText(R.string.ok)
+                            .show()
                     }
                 }
             }
 
             override fun onFailure(call: Call<SintomasResponse>?, t: Throwable?) {
-                Toast.makeText(activity, "Error", Toast.LENGTH_LONG).show()
+                activity.telaVisivel()
+                MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                    .title(R.string.erro)
+                    .content(R.string.serviceerror)
+                    .positiveText(R.string.ok)
+                    .show()
             }
         })
 

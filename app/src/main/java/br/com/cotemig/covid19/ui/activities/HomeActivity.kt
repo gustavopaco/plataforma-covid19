@@ -14,18 +14,15 @@ import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_location.*
 
 class HomeActivity : AppCompatActivity() {
-
-var numeromenu = 0
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        btnnoticias.isEnabled = false
-        setFragment(NoticiasFragment(),"noticias")
+        desabilitarBotoes()
         btnnoticias.setBackgroundColor(getColor(R.color.blueback))
         btnnoticias.setTextColor(getColor(R.color.blueselect))
-
+        setFragment(NoticiasFragment(),"noticias")
 
 
         btnnoticias.setOnClickListener {
@@ -55,7 +52,6 @@ var numeromenu = 0
     }
 
     fun menu (index : Int){
-        numeromenu = index
 
         btnnoticias.setBackgroundColor(getColor(R.color.white))
         btnnoticias.setTextColor(getColor(R.color.grey))
@@ -69,42 +65,38 @@ var numeromenu = 0
         btnsummary.setBackgroundColor(getColor(R.color.white))
         btnsummary.setTextColor(getColor(R.color.grey))
 
-        btnnoticias.isClickable = true
-        btnsintomas.isClickable = true
-        btnlocation.isClickable = true
-        btnsummary.isClickable = true
-        btnnoticias.isEnabled = true
+        desligarBotoes()
+        loading.visibility = View.VISIBLE
+        loadingbar.visibility = View.VISIBLE
 
         if (index == 0){
             btnnoticias.setBackgroundColor(getColor(R.color.blueback))
             btnnoticias.setTextColor(getColor(R.color.blueselect))
             setFragment(NoticiasFragment(),"noticias")
-            desligarBotoes()
-            loading.visibility = View.VISIBLE
         }else if(index == 1){
             btnsintomas.setBackgroundColor(getColor(R.color.blueback))
             btnsintomas.setTextColor(getColor(R.color.blueselect))
             setFragment(SintomasFragment(),"sintomas")
-            desligarBotoes()
-            loading.visibility = View.VISIBLE
         }else if(index == 2){
             btnlocation.setBackgroundColor(getColor(R.color.blueback))
             btnlocation.setTextColor(getColor(R.color.blueselect))
             setFragment(LocationFragment(),"location")
-            desligarBotoes()
-            loading.visibility = View.VISIBLE
         }else if(index == 3){
             btnsummary.setBackgroundColor(getColor(R.color.blueback))
             btnsummary.setTextColor(getColor(R.color.blueselect))
             setFragment(SummaryFragment(),"summary")
-            desligarBotoes()
-            loading.visibility = View.VISIBLE
         }
 
     }
 
     fun telaVisivel(){
         loading.visibility = View.GONE
+        loadingbar.visibility = View.GONE
+        btnnoticias.isEnabled = true
+        btnsintomas.isEnabled = true
+        btnlocation.isEnabled = true
+        btnsummary.isEnabled = true
+
         btnnoticias.isClickable = true
         btnsintomas.isClickable = true
         btnlocation.isClickable = true
@@ -114,8 +106,16 @@ var numeromenu = 0
     fun desligarBotoes(){
         btnnoticias.isClickable = false
         btnsintomas.isClickable = false
-        btnsummary.isClickable = false
         btnlocation.isClickable = false
+        btnsummary.isClickable = false
+    }
+
+    // Desabilita os botoes somente ao abrir o APP para nao forcar bug no servico
+    fun desabilitarBotoes(){
+        btnnoticias.isEnabled = false
+        btnsintomas.isEnabled = false
+        btnlocation.isEnabled = false
+        btnsummary.isEnabled = false
     }
 
 }

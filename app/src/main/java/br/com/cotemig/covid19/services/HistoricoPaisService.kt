@@ -7,7 +7,6 @@ import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface HistoricoPaisService {
-    var nome : String
     @GET("dayone/country/{id}")
     fun getHistoricoPais(
         @Path("id") id: String

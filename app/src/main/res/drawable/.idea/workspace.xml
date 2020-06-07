@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd99f282-e08d-4ca9-b197-01136bf490c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/br/com/cotemig/covid19/services/HistoricoPaisService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/br/com/cotemig/covid19/services/HistoricoPaisService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/br/com/cotemig/covid19/ui/activities/HomeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/br/com/cotemig/covid19/ui/activities/HomeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/br/com/cotemig/covid19/ui/fragment/SummaryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/br/com/cotemig/covid19/ui/fragment/SummaryFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../layout/activity_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../layout/activity_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1czS7hXuBarQKdg1JSfSMtPqQpc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../../../../sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd99f282-e08d-4ca9-b197-01136bf490c6" name="Default Changelist" comment="" />
+      <created>1591529762338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591529762338</updated>
+    </task>
+    <servers />
+  </component>
+</project>

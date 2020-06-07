@@ -12,6 +12,8 @@ import br.com.cotemig.covid19.models.NoticiasResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.activities.HomeActivity
 import br.com.cotemig.covid19.ui.adapters.NoticiasRecycleAdapter
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.Theme
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.fragment_noticias.*
 import retrofit2.Call
@@ -50,15 +52,25 @@ class NoticiasFragment : Fragment() {
                         listarecynoticias.adapter = NoticiasRecycleAdapter(activity,it.body())
                         listarecynoticias.layoutManager = LinearLayoutManager(activity,LinearLayoutManager.VERTICAL,false)
                         activity.telaVisivel()
-
-//                        Toast.makeText(this@NoticiasActivity,"Ok",Toast.LENGTH_LONG).show()
+                    }else{
+                        activity.telaVisivel()
+                        MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                            .title(R.string.erro)
+                            .content(R.string.serviceerror)
+                            .positiveText(R.string.ok)
+                            .show()
                     }
                 }
 
             }
 
             override fun onFailure(call: Call<List<NoticiasResponse>>?, t: Throwable?) {
-                Toast.makeText(activity,"Error", Toast.LENGTH_LONG).show()
+                activity.telaVisivel()
+                MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                    .title(R.string.erro)
+                    .content(R.string.serviceerror)
+                    .positiveText(R.string.ok)
+                    .show()
             }
         })
 

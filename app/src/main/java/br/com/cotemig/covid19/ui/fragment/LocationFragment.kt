@@ -11,6 +11,8 @@ import br.com.cotemig.covid19.models.CasosDataResponse
 import br.com.cotemig.covid19.models.LocationbyIPResponse
 import br.com.cotemig.covid19.services.RetrofitInitializer
 import br.com.cotemig.covid19.ui.activities.HomeActivity
+import com.afollestad.materialdialogs.MaterialDialog
+import com.afollestad.materialdialogs.Theme
 import kotlinx.android.synthetic.main.fragment_location.*
 import retrofit2.Call
 import retrofit2.Response
@@ -29,6 +31,7 @@ class LocationFragment : Fragment() {
     }
 
     fun getLocationbyIP() {
+        var activity = context as HomeActivity
         var s = RetrofitInitializer().serviceLocationbyIP()
         var call = s.getLocationbyIP()
 
@@ -41,13 +44,24 @@ class LocationFragment : Fragment() {
                 response?.let {
                     if(it.code() == 200){
                         getCasosEstados(it.body().region)
-//                        Toast.makeText(this@CasosEstadosActivity,"Ok", Toast.LENGTH_LONG).show()
+                    }else {
+                        activity.telaVisivel()
+                        MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                            .title(R.string.erro)
+                            .content(R.string.locationerror)
+                            .positiveText(R.string.ok)
+                            .show()
                     }
                 }
             }
 
             override fun onFailure(call: Call<LocationbyIPResponse>?, t: Throwable?) {
-                Toast.makeText(context as HomeActivity,"Error", Toast.LENGTH_LONG).show()
+                activity.telaVisivel()
+                MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                    .title(R.string.erro)
+                    .content(R.string.serviceerror)
+                    .positiveText(R.string.ok)
+                    .show()
             }
 
         })
