@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.HistoricoPaisActivity">
+    tools:context=".ui.activities.HistoricoPaisActivity"
+    android:orientation="horizontal">
 
 <!--    <TextView-->
 <!--        android:id="@+id/nhistoricopais"-->
@@ -17,24 +18,25 @@
 <!--        android:layout_marginRight="5dp"-->
 <!--        android:textSize="25sp"-->
 <!--        android:fontFamily="sans-serif-black"/>-->
+    <Button
+        android:id="@+id/btnvoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar"
+        android:textSize="8.5dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/robotomedium"/>
 
     <TextView
+        android:layout_below="@+id/btnvoltar"
         android:id="@+id/historicopais"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         android:textSize="20sp"
         android:fontFamily="sans-serif-light"/>
 
-    <ImageButton
-        android:id="@+id/btnvoltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
-        app:srcCompat="@drawable/abc_vector_test" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listahistorico"

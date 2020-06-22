@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="SINTOMAS COMUNS: "
+        android:text="@string/sintcomuns"
         android:fontFamily="@font/robotomedium"
         android:textSize="15sp"
         android:textColor="@color/blacktitle"/>
@@ -82,7 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="SINTOMAS RAROS: "
+        android:text="@string/sintraros"
         android:textSize="15dp"
         android:fontFamily="@font/robotomedium"
         android:textColor="@color/blacktitle"/>
@@ -179,7 +179,7 @@
         android:id="@+id/recomendacoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RECOMENDAÇÕES: "
+        android:text="@string/recomendacoes"
         android:layout_margin="20dp"
         android:fontFamily="@font/robotomedium"
         android:textSize="15dp"
@@ -214,7 +214,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:textSize="15sp"
-        android:text="TEMPO DE SINTOMAS: "
+        android:text="@string/tempodesint"
         android:fontFamily="@font/robotomedium"
         android:textColor="@color/blacktitle"/>
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.8">
+      <module name="covid19.app" target="1.8" />
       <module name="covidsintomas.app" target="1.8" />
     </bytecodeTargetLevel>
   </component>

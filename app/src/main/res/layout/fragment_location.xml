@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.LocationFragment">
+    tools:context=".ui.fragment.LocationFragment"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_marginTop="150dp"
@@ -50,7 +51,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="20dp"
-            android:text="Estado: "
+            android:text="@string/estado"
             android:textSize="15sp"
             android:textColor="@color/blacktitle"/>
 
@@ -69,7 +70,7 @@
             android:layout_alignBaseline="@+id/nestado"
             android:layout_marginLeft="200dp"
             android:layout_marginRight="5dp"
-            android:text="UF:"
+            android:text="@string/uf"
             android:textColor="@color/blacktitle"
             android:textSize="15sp"/>
 
@@ -88,7 +89,7 @@
             android:layout_below="@id/nestado"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="5dp"
-            android:text="Casos: "
+            android:text="@string/casos"
             android:textSize="15sp"
             android:textColor="@color/blacktitle"/>
 
@@ -107,7 +108,7 @@
             android:layout_alignBaseline="@id/ncasos"
             android:layout_marginLeft="200dp"
             android:layout_marginRight="5dp"
-            android:text="Mortes: "
+            android:text="@string/mortes"
             android:textColor="@color/blacktitle"
             android:textSize="15sp"/>
 
@@ -128,7 +129,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="20dp"
-            android:text="Suspeitos: "
+            android:text="@string/suspeitos"
             android:textColor="@color/blacktitle"
             android:textSize="15sp"/>
 
@@ -147,7 +148,7 @@
             android:layout_alignBaseline="@id/nsuspects"
             android:layout_marginLeft="200dp"
             android:layout_marginRight="5dp"
-            android:text="Descartados: "
+            android:text="@string/descartados"
             android:textColor="@color/blacktitle"
             android:textSize="15sp"/>
 

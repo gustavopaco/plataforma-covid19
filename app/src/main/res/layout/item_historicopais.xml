@@ -20,6 +20,23 @@
 <!--        android:layout_alignBaseline="@id/npais"-->
 <!--        android:layout_toRightOf="@id/npais" />-->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/button_redondo">
+    </ImageView>
+
+
     <TextView
         android:id="@+id/ndata"
         android:layout_width="wrap_content"
@@ -28,7 +45,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="5dp"
-        android:text="Data:" />
+        android:text="@string/data" />
 
     <TextView
         android:id="@+id/data"
@@ -44,7 +61,7 @@
         android:layout_below="@id/ndata"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="5dp"
-        android:text="Confirmados:" />
+        android:text="@string/confirmados" />
 
     <TextView
         android:id="@+id/Confirmed"
@@ -61,7 +78,7 @@
         android:layout_alignStart="@id/nconfirmed"
         android:layout_marginLeft="200dp"
         android:layout_marginRight="5dp"
-        android:text="Mortos:" />
+        android:text="@string/mortos" />
 
     <TextView
         android:id="@+id/Deaths"
@@ -78,7 +95,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="5dp"
-        android:text="Ativos:" />
+        android:text="@string/ativos" />
 
     <TextView
         android:id="@+id/Active"
@@ -95,7 +112,7 @@
         android:layout_alignStart="@id/nActive"
         android:layout_marginLeft="200dp"
         android:layout_marginRight="5dp"
-        android:text="Recuperados:" />
+        android:text="@string/recuperados" />
 
     <TextView
         android:id="@+id/Recovered"
