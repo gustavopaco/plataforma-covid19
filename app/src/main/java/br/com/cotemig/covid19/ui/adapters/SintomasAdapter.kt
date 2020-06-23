@@ -28,36 +28,6 @@ class SintomasAdapter (var context: Context, var list: List<String>, var list2 :
 
     return view
     }
-//        var type = getItemViewType(position)
-//        if(type == 0){
-//            var view = LayoutInflater.from(context).inflate(R.layout.item_sintomas,null)
-//            var sintomas = view.findViewById<TextView>(R.id.sintomas)
-//            sintomas.text = list[position]
-//            return view
-//        }else{
-//            var view2 = LayoutInflater.from(context).inflate(R.layout.item_sintomas2,null)
-//            var sintomas2 = view2.findViewById<TextView>(R.id.sintomas2)
-//            sintomas2.text = list2[position]
-//            return view2
-//        }
-
-//        var view2 = LayoutInflater.from(context).inflate(R.layout.item_sintomas2,null)
-//        var sintomas2 = view2.findViewById<TextView>(R.id.sintomas2)
-//        sintomas2.text = x[position]
-
-
-//    override fun getItemViewType(position: Int): Int {
-//        if(position == 0){
-//            return 0
-//        }else{
-//            return 1
-//        }
-//
-//    }
-
-//    override fun getViewTypeCount(): Int {
-//        return 2
-//    }
 
     override fun getItem(position: Int): Any {
         return ""

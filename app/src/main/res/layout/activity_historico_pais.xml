@@ -4,47 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.HistoricoPaisActivity"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    tools:context=".ui.activities.HistoricoPaisActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/nhistoricopais"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="País:"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:layout_marginLeft="20dp"-->
-<!--        android:layout_marginRight="5dp"-->
-<!--        android:textSize="25sp"-->
-<!--        android:fontFamily="sans-serif-black"/>-->
     <Button
         android:id="@+id/btnvoltar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/voltar"
-        android:textSize="8.5dp"
         android:backgroundTint="@color/white"
+        android:fontFamily="@font/robotomedium"
+        android:text="@string/voltar"
         android:textColor="@color/grey"
-        android:fontFamily="@font/robotomedium"/>
+        android:textSize="8.5dp" />
 
     <TextView
-        android:layout_below="@+id/btnvoltar"
         android:id="@+id/historicopais"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btnvoltar"
         android:layout_margin="20dp"
-        android:textSize="20sp"
-        android:fontFamily="sans-serif-light"/>
-
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listahistorico"
-        android:layout_below="@id/historicopais"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-
+        android:layout_height="match_parent"
+        android:layout_below="@id/historicopais" />
 
 
 </RelativeLayout>

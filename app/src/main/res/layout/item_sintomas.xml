@@ -2,195 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-<!--    <TextView-->
-<!--        android:id="@+id/sintomas5"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="5dp"-->
-<!--        android:textSize="10dp" />-->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white">
 
         <ImageView
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@drawable/button_redondo">
-        </ImageView>
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_redondo"></ImageView>
 
-    <TextView
-        android:id="@+id/nsintomascomuns"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/sintcomuns"
-        android:fontFamily="@font/robotomedium"
-        android:textSize="15sp"
-        android:textColor="@color/blacktitle"/>
+        <TextView
+            android:id="@+id/nsintomascomuns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/sintcomuns"
+            android:textColor="@color/blacktitle"
+            android:textSize="15sp" />
 
 
-    <!--    &lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:id="@+id/listasintomas"&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:layout_height="wrap_content" />&ndash;&gt;-->
-
-    <ListView
-        android:layout_below="@+id/nsintomascomuns"
-        android:id="@+id/listasintomas"
-        android:layout_width="200dp"
-        android:layout_height="95dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="@color/bluebackground"
-        />
+        <ListView
+            android:id="@+id/listasintomas"
+            android:layout_width="200dp"
+            android:layout_height="95dp"
+            android:layout_below="@+id/nsintomascomuns"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/bluebackground" />
 
         <ImageView
             android:id="@+id/sintomascomuns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="45dp"
             android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/sintomascomuns"
-            android:layout_toRightOf="@+id/nsintomascomuns">
-        </ImageView>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
-
-    <ImageView
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="380dp"
-        android:background="@drawable/button_redondo">
-    </ImageView>
-
-    <TextView
-        android:id="@+id/nsintomasraros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="@string/sintraros"
-        android:textSize="15dp"
-        android:fontFamily="@font/robotomedium"
-        android:textColor="@color/blacktitle"/>
-
-
-    <!--    &lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:id="@+id/listasinatomasraros"&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:layout_height="wrap_content" />&ndash;&gt;-->
-
-    <ListView
-        android:layout_below="@+id/nsintomasraros"
-        android:id="@+id/listasinatomasraros"
-        android:layout_width="200dp"
-        android:layout_height="300dp"
-        android:layout_marginHorizontal="20dp"
-        android:background="@color/bluebackground"/>
-
-        <ImageView
-            android:id="@+id/sintomasraros"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="70dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/sintomasraros"
-            android:layout_toRightOf="@+id/nsintomasraros">
-        </ImageView>
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
-
-    <ImageView
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/button_redondo">
-    </ImageView>
-
-    <TextView
-        android:id="@+id/nsintomasgraves"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="SINTOMAS GRAVES: "
-        android:fontFamily="@font/robotomedium"
-        android:textSize="15dp"
-        android:textColor="@color/blacktitle"/>
-
-
-    <!--    &lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:id="@+id/listasinatomasgraves"&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-    <!--    &lt;!&ndash;        android:layout_height="wrap_content" />&ndash;&gt;-->
-
-    <ListView
-        android:layout_below="@+id/nsintomasgraves"
-        android:id="@+id/listasinatomasgraves"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginHorizontal="20dp"/>
-
-        <ImageView
-            android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="110dp"
-            android:layout_toRightOf="@+id/listasinatomasgraves"
-            android:src="@drawable/sintomasgraves">
-        </ImageView>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
-
-    <ImageView
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/button_redondo">
-    </ImageView>
-
-    <TextView
-        android:id="@+id/recomendacoes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/recomendacoes"
-        android:layout_margin="20dp"
-        android:fontFamily="@font/robotomedium"
-        android:textSize="15dp"
-        android:textColor="@color/blacktitle"/>
-
-    <ListView
-        android:layout_below="@+id/recomendacoes"
-        android:id="@+id/listarecomendacoes"
-        android:layout_width="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_height="115dp" />
+            android:layout_toRightOf="@+id/nsintomascomuns"
+            android:src="@drawable/sintomascomuns"></ImageView>
 
     </RelativeLayout>
 
@@ -200,33 +56,148 @@
         android:background="@color/white">
 
         <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
+            android:background="@drawable/button_redondo"></ImageView>
+
+        <TextView
+            android:id="@+id/nsintomasraros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/sintraros"
+            android:textColor="@color/blacktitle"
+            android:textSize="15dp" />
+
+
+        <ListView
+            android:id="@+id/listasinatomasraros"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_below="@+id/nsintomasraros"
+            android:layout_marginHorizontal="20dp"
+            android:background="@color/bluebackground" />
+
+        <ImageView
+            android:id="@+id/sintomasraros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@+id/nsintomasraros"
+            android:src="@drawable/sintomasraros"></ImageView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_redondo"></ImageView>
+
+        <TextView
+            android:id="@+id/nsintomasgraves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="SINTOMAS GRAVES: "
+            android:textColor="@color/blacktitle"
+            android:textSize="15dp" />
+
+
+        <ListView
+            android:id="@+id/listasinatomasgraves"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/nsintomasgraves"
+            android:layout_marginHorizontal="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/listasinatomasgraves"
+            android:src="@drawable/sintomasgraves"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_redondo"></ImageView>
+
+        <TextView
+            android:id="@+id/recomendacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/recomendacoes"
+            android:textColor="@color/blacktitle"
+            android:textSize="15dp" />
+
+        <ListView
+            android:id="@+id/listarecomendacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:layout_below="@+id/recomendacoes"
+            android:layout_marginHorizontal="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/button_redondo">
-        </ImageView>
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_redondo"></ImageView>
 
-    <TextView
-        android:id="@+id/ntemposintomas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textSize="15sp"
-        android:text="@string/tempodesint"
-        android:fontFamily="@font/robotomedium"
-        android:textColor="@color/blacktitle"/>
+        <TextView
+            android:id="@+id/ntemposintomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/tempodesint"
+            android:textColor="@color/blacktitle"
+            android:textSize="15sp" />
 
-    <TextView
-        android:layout_below="@+id/ntemposintomas"
-        android:id="@+id/temposintomas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="20dp"
-        android:textSize="15sp"
-        android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/temposintomas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ntemposintomas"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
     </RelativeLayout>
 

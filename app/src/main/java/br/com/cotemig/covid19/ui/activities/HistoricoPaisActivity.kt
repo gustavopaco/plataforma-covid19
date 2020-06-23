@@ -32,7 +32,7 @@ class HistoricoPaisActivity : AppCompatActivity() {
     fun getHistoricoPais() {
         var activity = HomeActivity()
         var s = RetrofitInitializer().serviceHistoricoPais()
-        var p = intent.getStringExtra("pais")
+        var p = intent.getStringExtra("url")
         var nomepais = intent.getStringExtra("nomepais")
         var call = s.getHistoricoPais(p)
 

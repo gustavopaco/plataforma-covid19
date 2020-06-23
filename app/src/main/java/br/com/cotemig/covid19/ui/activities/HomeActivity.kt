@@ -51,6 +51,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+    // Funcao que detecta baseado no indice, qual botao foi clicado e chama o servico
     fun menu (index : Int){
 
         btnnoticias.setBackgroundColor(getColor(R.color.white))
@@ -89,6 +90,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
+    // Remove Loading da tela e abilita os botoes
     fun telaVisivel(){
         loading.visibility = View.GONE
         loadingbar.visibility = View.GONE
@@ -103,6 +105,7 @@ class HomeActivity : AppCompatActivity() {
         btnsummary.isClickable = true
     }
 
+    // Desabilita os botoes somente na primeira vez que abre o aplicativo
     fun desligarBotoes(){
         btnnoticias.isClickable = false
         btnsintomas.isClickable = false

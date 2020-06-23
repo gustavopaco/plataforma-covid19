@@ -14,16 +14,6 @@ class SintomasItemAdapter (var context: Context, var list : List<String>) : Base
         var sintomas2 = view.findViewById<TextView>(R.id.sintomas2)
         sintomas2.text = list[position]
 
-
-//        var listasintomas = view.findViewById<ListView>(R.id.listasintomas)
-//        var listasinatomasraros = view.findViewById<ListView>(R.id.listasinatomasraros)
-//        var listasinatomasgraves = view.findViewById<ListView>(R.id.listasinatomasgraves)
-//        var listarecomendacoes = view.findViewById<ListView>(R.id.listarecomendacoes)
-
-//        listasintomas.adapter = SintomasAdapter(context, list)
-//        listasinatomasraros.adapter = SintomasAdapter(context,list2)
-//        listasinatomasgraves.adapter = SintomasAdapter(context,list3)
-
         return view
     }
 

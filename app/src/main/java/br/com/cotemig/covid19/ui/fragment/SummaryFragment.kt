@@ -84,7 +84,7 @@ class SummaryFragment : Fragment() {
                     override
                     fun onItemClick(view: View?, position: Int) {
                         var intent = Intent(context as HomeActivity, HistoricoPaisActivity::class.java)
-                        intent.putExtra("pais", pais.Countries[position].Slug)
+                        intent.putExtra("url", pais.Countries[position].Slug)
                         intent.putExtra("nomepais", pais.Countries[position].Country)
                         startActivity(intent)
                     }

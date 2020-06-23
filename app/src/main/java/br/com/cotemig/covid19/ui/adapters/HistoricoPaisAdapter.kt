@@ -40,7 +40,6 @@ class HistoricoPaisAdapter(var context: Context, var list: List<CountryHistorico
             val formatter = SimpleDateFormat("dd/MM/yyyy")
             val output: String = formatter.format(parser.parse(item.Date.toString()))
 
-//            Country.text = item.Country
             data.text = output
             Confirmed.text = item.Confirmed.toString()
             Deaths.text = item.Deaths.toString()

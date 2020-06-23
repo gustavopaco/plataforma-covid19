@@ -3,45 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.LocationFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".ui.fragment.LocationFragment">
 
     <LinearLayout
-        android:layout_marginTop="150dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ilustracovid">
-        </ImageView>
+            android:src="@drawable/ilustracovid"></ImageView>
 
 
     </LinearLayout>
 
     <RelativeLayout
-        android:layout_marginTop="400dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
         android:background="@color/white">
 
         <ImageView
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="15dp"
             android:layout_width="match_parent"
             android:layout_height="125dp"
-            android:background="@drawable/button_redondo">
-        </ImageView>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_redondo"></ImageView>
 
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
-            android:background="@color/white"/>
+            android:background="@color/white" />
 
         <TextView
             android:id="@+id/nestado"
@@ -52,8 +50,8 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="20dp"
             android:text="@string/estado"
-            android:textSize="15sp"
-            android:textColor="@color/blacktitle"/>
+            android:textColor="@color/blacktitle"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/estado"
@@ -61,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/nestado"
             android:layout_toRightOf="@id/nestado"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/nuf"
@@ -72,7 +70,7 @@
             android:layout_marginRight="5dp"
             android:text="@string/uf"
             android:textColor="@color/blacktitle"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/uf"
@@ -80,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/nuf"
             android:layout_toRightOf="@id/nuf"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/ncasos"
@@ -90,8 +88,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="5dp"
             android:text="@string/casos"
-            android:textSize="15sp"
-            android:textColor="@color/blacktitle"/>
+            android:textColor="@color/blacktitle"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/casos"
@@ -99,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/ncasos"
             android:layout_toRightOf="@id/ncasos"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/ndeaths"
@@ -110,7 +108,7 @@
             android:layout_marginRight="5dp"
             android:text="@string/mortes"
             android:textColor="@color/blacktitle"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/deaths"
@@ -118,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/ndeaths"
             android:layout_toRightOf="@id/ndeaths"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/nsuspects"
@@ -131,7 +129,7 @@
             android:layout_marginBottom="20dp"
             android:text="@string/suspeitos"
             android:textColor="@color/blacktitle"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/suspects"
@@ -139,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/nsuspects"
             android:layout_toRightOf="@id/nsuspects"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <TextView
             android:id="@+id/nrefuses"
@@ -150,7 +148,7 @@
             android:layout_marginRight="5dp"
             android:text="@string/descartados"
             android:textColor="@color/blacktitle"
-            android:textSize="15sp"/>
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/refuses"
@@ -158,7 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/nrefuses"
             android:layout_toRightOf="@id/nrefuses"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 

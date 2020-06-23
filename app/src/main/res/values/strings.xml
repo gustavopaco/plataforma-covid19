@@ -7,7 +7,6 @@
     <string name="total_recovered">Casos recuperados:</string>
     <string name="total_deaths">Casos fatais</string>
     <string name="countries">Países</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="noticias">Notícias</string>
     <string name="sintomas">Sintomas</string>
     <string name="meuestado">Meu estado</string>

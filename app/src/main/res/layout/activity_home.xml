@@ -10,45 +10,45 @@
         android:id="@+id/head"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@color/white">
+        android:background="@color/white"
+        android:orientation="horizontal">
 
         <Button
-            android:layout_weight="1"
             android:id="@+id/btnnoticias"
-            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomedium"
             android:text="@string/noticias"
-            android:textSize="8.5dp"
-            android:backgroundTint="@color/white"
             android:textColor="@color/grey"
-            android:fontFamily="@font/robotomedium"/>
+            android:textSize="8.5dp" />
 
         <Button
-            android:layout_marginRight="10dp"
             android:id="@+id/btnsintomas"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/sintomas"
-            android:textSize="8.5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/sintomas"
             android:textColor="@color/grey"
-            android:fontFamily="@font/robotomedium"/>
+            android:textSize="8.5dp" />
 
         <Button
-            android:layout_marginRight="10dp"
             android:id="@+id/btnlocation"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="@string/meuestado"
-            android:textSize="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/meuestado"
             android:textColor="@color/grey"
-            android:fontFamily="@font/robotomedium"/>
+            android:textSize="7dp" />
 
         <Button
             android:id="@+id/btnsummary"
@@ -56,11 +56,11 @@
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:text="@string/paises"
-            android:textSize="8.5dp"
             android:backgroundTint="@color/white"
+            android:fontFamily="@font/robotomedium"
+            android:text="@string/paises"
             android:textColor="@color/grey"
-            android:fontFamily="@font/robotomedium"/>
+            android:textSize="8.5dp" />
 
     </LinearLayout>
 
@@ -68,25 +68,25 @@
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_below="@id/head"
-        android:background="@color/bluebackground"/>
+        android:background="@color/bluebackground" />
 
     <FrameLayout
         android:id="@+id/contenthome"
-        android:layout_below="@id/head"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/head" />
 
     <RelativeLayout
         android:id="@+id/loading"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/transparent"/>
+        android:background="@color/transparent" />
 
     <ProgressBar
         android:id="@+id/loadingbar"
-        android:indeterminateDrawable="@drawable/progressbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progressbar" />
 
 </RelativeLayout>

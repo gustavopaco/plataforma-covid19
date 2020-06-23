@@ -91,13 +91,24 @@ class LocationFragment : Fragment() {
                                 activity.telaVisivel()
                             }
                         }
-//                        Toast.makeText(this@CasosEstadosActivity,"Ok", Toast.LENGTH_LONG).show()
+                    }else {
+                        activity.telaVisivel()
+                        MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                            .title(R.string.erro)
+                            .content(R.string.serviceerror)
+                            .positiveText(R.string.ok)
+                            .show()
                     }
                 }
             }
 
             override fun onFailure(call: Call<CasosDataResponse>?, t: Throwable?) {
-                Toast.makeText(context as HomeActivity,"Error", Toast.LENGTH_LONG).show()
+                activity.telaVisivel()
+                MaterialDialog.Builder(activity).theme(Theme.LIGHT)
+                    .title(R.string.erro)
+                    .content(R.string.serviceerror)
+                    .positiveText(R.string.ok)
+                    .show()
             }
 
 

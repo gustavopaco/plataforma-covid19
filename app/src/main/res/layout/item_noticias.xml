@@ -11,15 +11,15 @@
         android:layout_margin="20dp"
         android:gravity="center"
         android:text="Title"
-        android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/black"
+        android:textSize="25sp" />
 
     <ImageView
         android:id="@+id/imagenoticas"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@id/titulonoticias"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY" />
 
     <TextView
         android:id="@+id/datanoticias"
@@ -30,24 +30,24 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="date"
-        android:textColor="@color/blacktitle"/>
+        android:textColor="@color/blacktitle" />
 
     <TextView
         android:id="@+id/textonoticias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/datanoticias"
-        android:text="text"
-        android:textSize="15dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="10dp"
-        android:textColor="@color/blacktitle"/>
+        android:text="text"
+        android:textColor="@color/blacktitle"
+        android:textSize="15dp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:layout_below="@id/textonoticias"
-        android:background="@color/blacktitle"/>
+        android:background="@color/blacktitle" />
 
 
 </RelativeLayout>

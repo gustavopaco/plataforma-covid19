@@ -3,39 +3,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.SummaryFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".ui.fragment.SummaryFragment">
 
     <ImageView
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
         android:id="@+id/imagemundo"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
         android:src="@drawable/mundo">
 
     </ImageView>
 
 
     <TextView
-        android:layout_centerHorizontal="true"
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_below="@+id/imagemundo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/title"
         android:textColor="@color/black"
         android:textSize="20sp" />
 
     <LinearLayout
-        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/title"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="5dp"
+        android:background="@color/white"
         android:orientation="vertical">
 
 
@@ -43,18 +43,18 @@
             android:id="@+id/total_confirmed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
             android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
             android:textColor="@color/redWarning"
             android:textSize="25sp"
 
             />
 
         <LinearLayout
-            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp">
 
             <TextView
@@ -79,10 +79,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp">
 
             <TextView
@@ -108,10 +108,9 @@
                 android:id="@+id/mais"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+"
                 android:layout_marginLeft="5dp"
-                android:textColor="@color/blacktitle">
-            </TextView>
+                android:text="+"
+                android:textColor="@color/blacktitle"></TextView>
 
             <TextView
                 android:id="@+id/new_recovered"
@@ -124,10 +123,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
+            android:layout_gravity="center_horizontal"
             android:layout_marginVertical="5dp">
 
             <TextView
@@ -153,10 +152,9 @@
                 android:id="@+id/mais2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+"
                 android:layout_marginLeft="5dp"
-                android:textColor="@color/blacktitle">
-            </TextView>
+                android:text="+"
+                android:textColor="@color/blacktitle"></TextView>
 
             <TextView
                 android:id="@+id/new_deaths"
@@ -178,15 +176,10 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <!--        <ListView-->
-        <!--            android:id="@+id/countriesList"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"/>-->
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listacountries"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
